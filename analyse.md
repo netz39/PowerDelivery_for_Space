@@ -13,9 +13,10 @@
 - [ ] verschiedene Belastungen (Spannung und Strom) testen
 
 - [ ] Die Heatpoints auflisten und die Ursache beschreiben
+
 Strom/Spannung | Platine von unten | Platine von oben
---- | --- | ---
-20V bei 5A | ![Bild von Unten](/media/ThermalCam_down1.JPG)|![Bild von Oben](/media/ThermalCam_top4.JPG)
+-------------- | ----------------- | ---------------
+IN: 29V / 3,5A (101W)<br> OUT: 19,5V / 4,9A (94,6W)<br> Wirkungsgrad:  94%| ![Bild von Unten](/media/ThermalCam_down1.JPG)|![Bild von Oben](/media/ThermalCam_top4.JPG)
 
 ## Spannung
 
