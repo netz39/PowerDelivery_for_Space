@@ -1,8 +1,9 @@
 # PowerDelivery für den Hackerspace
+![Table](/media/CAD_rendering_table.png)
 Der Arbeitstisch sollte um eine zentrale Ladeeinrichtung für Smartphones, Laptops und andere Gerätschaften erweitert werden.<br>
 Dafür bietet sich der mitterweile weit verbreitete "USB PowerDelivery" Ladestandart an, welcher Spannungen im Bereich **5V bis 20V mit bis zu 5A** (also max. 100W) zur Verfügung stellt.
 
-Die Grundlage dieses Projektes ist ein fertig Board, dass man unter dem Namen "PDS100" bei den üblichen asiatischen Kaufplattformen erwerben kann. Das Board basiert auf dem Chip SW3518S vom Hersteller ISMARTWARE.<br>
+Die Grundlage dieses Projektes ist ein fertiges Board, dass man unter dem Namen "PDS100" bei den üblichen asiatischen Kaufplattformen erwerben kann. Das Board basiert auf dem Chip "SW3518S" vom Hersteller ISMARTWARE.<br>
 Die genaue Analyse und überprüfung des Boards kann [hier](analyse.md) nachgelesen werden.
 
 - [ ] Bilder vom Tisch mit Lademodulen machen
@@ -13,7 +14,9 @@ Die genaue Analyse und überprüfung des Boards kann [hier](analyse.md) nachgele
 - [ ] Ein paar Fakten zu dem Modul schreiben (z.B. Spannungsversorgung, StepDown Regler)
 - [ ] minimale Spannung testen
 
-Das Lademodul muss mit einer Gleichspannung im Bereich xV - 30V betrieben werden. Als Spannungseingang kann auf einen herkömlichen Hohlstecker vom Typ 5,5x2,5mm zurück gegriffen werden. Desweiteren gibt es eine USB-C Buchse, welche über USB PowerDelivery 2 versucht 20V zu triggern.
+<img src="/media/PDS100_1.jpg" width="50%"/><img src="/media/PDS100_2.jpg" width="50%"/>
+
+Das Lademodul muss mit einer Gleichspannung im Bereich 6V - 30V betrieben werden. Als Spannungseingang kann auf einen herkömlichen Hohlstecker vom Typ 5,5x2,5mm zurück gegriffen werden. Desweiteren gibt es eine USB-C Buchse, welche über USB PowerDelivery 2 versucht 20V zu triggern.
 
 Da der PDS100 Spannungen nur herunterregeln kann, muss die Eingangspannung min. 1V über der maximalen genutzten Spannung sein.
 
@@ -26,7 +29,6 @@ Für die folgende Übersicht von unterstützten Charge Protokollen wurde das [Da
   
 Protokoll | Kurzform | Display | Hersteller | Spannungen & Strom
 --------- | ---------| ------- | ---------- | ------------------
-keins     |    -     | n0n     | -          | 5V 2A (**ToDo:** testen!)
 Quick Charge 2.0 | QC2 | C2.0  | Qualcomm   | 5V, 9V, 12V, 15V, 20V<br>max. 3A
 Quick Charge 3.0 | QC3 | C3.0  | Qualcomm   | 3,7V - 20V (0,2V Steps)<br>max. 3A
 PowerDelivery 2.0<br>aka Quick Charge 4| PD2 | PD2  | offen      | 5V, 9V, 12V, 15V, 20V<br>max. 5A
@@ -37,9 +39,10 @@ Super Charge Protocol | SCP | SCP  | Huawei   | 3,4V - 5,5V<br>max. 5A
 Super Fast Charge Protocol | SFCP | ?  | Huawei   | 5V, 9V, 12V
 Pump Express 1.1 | PE1.1 | PE1  | Mediatek   | 5V, 7V, 9V, 12V
 Pump Express 2.0 | PE2.0 | PE2  | Mediatek   | 5V - 20V (0,5V Steps)
-Apple Charge (*1)     | -     | ?    | Apple      | 5V max. 2,4A
-Samsung Charge (*2) | - | ? | Samsung | 5V max. 2A
-USB BC1.2 (*3) | DCP | ? | offen | 5V max. 1,5A
+keins     |    -     | n0n     | -          | 5V 2A (**ToDo:** testen!)
+Apple Charge (*1)     | -     | n0n    | Apple      | 5V max. 2,4A
+Samsung Charge (*2) | - | n0n | Samsung | 5V max. 2A
+USB BC1.2 (*3) | DCP | n0n | offen | 5V max. 1,5A
 Dash Charge | VOOC | ? | OPPO | 5V max. 4A
 
 **(*1)** wird getriggert, wenn D+ & D- auf 2,7V gezogen werden<br>
