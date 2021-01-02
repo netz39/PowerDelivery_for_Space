@@ -11,9 +11,10 @@ Die Grundlage dieses Projektes ist ein fertiges Board, dass man unter dem Namen 
 <img src="/media/PDS100_1.jpg" width="50%"/><img src="/media/PDS100_2.jpg" width="50%"/><br><div align="center">*Bilder sind vom Händler "TZT Official Store"*</div>
 
 Das Board basiert auf dem Chip "SW3518S" vom Hersteller ISMARTWARE.<br>
+Leider gibt es nur sehr wenig Informationen und Daten über das Lademodul. Daher wurden viele Daten durch eigene Test und Analysen zusammengetragen.
 Die genaue Analyse und überprüfung des Boards kann [hier](analyse.md) nachgelesen werden.
 
-Das Lademodul muss mit einer Gleichspannung im Bereich 6V - 30V betrieben werden. Als Spannungseingang kann auf einen herkömlichen Hohlstecker vom Typ 5,5x2,5mm zurück gegriffen werden. Als alternativen Spannungseingang gibt es eine USB-C Buchse, welche über PowerDelivery 2.0 eine Spannung von 20V triggert.<br>
+Das Lademodul muss mit einer Gleichspannung im Bereich 6V - 30V betrieben werden. Als Spannungseingang kann auf einen herkömmlichen Hohlstecker vom Typ 5,5x2,5mm zurück gegriffen werden. Als alternativen Spannungseingang gibt es eine USB-C Buchse, welche über PowerDelivery 2.0 eine Spannung von 20V triggert.<br>
 Da das Modul Spannungen nur herunterregeln kann, muss die Eingangspannung min. 1V über der maximalen genutzten Spannung sein.
 
 Als Ausgang stehen eine USB-C und eine USB-A Buchse zur Verfügung. Zudem werden über die 3 stellige 7-Segment Anzeige verschiedene Informationen angezeigt:
@@ -85,7 +86,6 @@ Mithilfe dieser Polygon-Version der PDS100-Platine konnte das neue Gehäuse ange
 <img src="/media/CAD_rendering2.png" width="50%"/><img src="/media/CAD_rendering.png" width="50%"/><br>
 Das Gehäuse besteht aus einer Halterung, in welche die Platine einfach reingesteckt werden kann. Ein Deckel wird passend auf den vorderen Teil der Platine raufgesteckt und schließt bündig mit der vorhanden Halterung ab. Die Öffnungen an der Ober- und Unterseite dienen der Kühlung.
 <br>![animatedView](/media/CAD_rendering.gif)<br>
-
 Zum Befestigen sind zwei Einsparungen für Muttern der Größe M4 vorgesehen. Über die Öffnung an Unterseite können die Stromkabel verlegt werden.<br>
 ![rendered Picture for mounting](/media/CAD_rendering_mounting.png)
 
