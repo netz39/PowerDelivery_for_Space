@@ -64,7 +64,7 @@ Dash Charge | VOOC | ? | OPPO | 5V max. 4A
 Die meisten Charge Protokolle werden über die differentielle Leitung (D+ & D-) des USB-Kabels getriggert. Somit können alle (alten) USB-Kabel genutzt werden, welche diese 2 Leitungen besitzten.<br>
 Der USB PowerDelivery Standart hat für seine Kommunikation eine extra CC (Control Channel) Datenleitung. Somit können USB Kabel welche einen klassischen USB Stecker haben (Typ-A, Typ-B, Mini, Micro) nicht für PowerDelivery genutzt werden.<br>
 Da normale USB Kabel für max. 3A ausgelegt sind (diese müssen dann auch schon recht hochwertig sein), sind lediglich Leistungen von max. 60W  (3A bei 20V) möglich.<br>
-PowerDelivery ist jedoch in der Lage höhere Stromstärken anzubieten. Dazu müssen spezielle USB-C Kabel henutzt werden, welche über einen eingebauten E-Marker Chip verfügen und mit dem Ladegerät kommunizieren können.
+PowerDelivery ist jedoch in der Lage höhere Stromstärken anzubieten. Dazu müssen spezielle USB-C Kabel genutzt werden, welche über einen eingebauten E-Marker Chip verfügen und mit dem Ladegerät kommunizieren können.
 
 Das Analysegerät "Qway-U2p" bietet die Möglichkeit solche E-Marker Chips auszulesen.
 
@@ -103,7 +103,7 @@ Polycarbonat | 148°C
 Somit würden für unsere 3D Drucker nur ABS und annealed PLA infrage kommen. Da ABS ohne Hitzekammer nur schwer zu drucken ist und wir noch keine Erfahrung über das Härten von Kunststoffen haben, haben wir die Halterungen in Polycarbonat drucken lassen.
 
 ### Montage & Verkabelung
-
+<br>![Verkabelung](/media/Verkabelung.png)<br>
 
 - [ ] DXF Files hochladen
 - [ ] Sicherungskasten fotografieren
