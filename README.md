@@ -1,5 +1,5 @@
 # PowerDelivery für den Hackerspace
-![Table](/media/gallery/20210102_160408.jpg)<div align="center">*Ein-/Ausschalter, 3x XT60 Buchsen, 6x USB-Ladestationen*</div>
+![Beispiel](/media/gallery/20210102_160408.jpg)<div align="center">*test test*</div>
 
 Der Arbeitstisch sollte um eine zentrale Ladeeinrichtung für Smartphones, Laptops und andere Gerätschaften erweitert werden.<br>
 Dafür bietet sich der mitterweile weit verbreitete "USB PowerDelivery" Ladestandart an, welcher Spannungen im Bereich **5V bis 20V mit bis zu 5A** (also max. 100W) zur Verfügung stellt.
@@ -74,7 +74,7 @@ Das Analysegerät "Qway-U2p" bietet die Möglichkeit solche E-Marker Chips auszu
 ## Integration in den Space
 
 Da mehrere Personen gleichzeitig am Basteltisch arbeiten können, wurde sich für 6 Ladestationen entschieden, die gleichmäßig auf dem mittleren Brett montiert werden sollen. Das Kabelmanagment und die dazugehörige Stromversorgung soll unter dem Tisch montiert und verlegt werden.
-
+<br>![Table](/media/gallery/20210102_160404.jpg)<br>
 ### Neues Gehäuse
 Damit die PDS100 Module sicher und auch optisch (einigermaßen) passend montiert werden können, wurde ein neues Gehäuse für den 3D Druck benötigt. Dabei sind folgende Kriterien zu erfüllen:
 * Die Platine muss geschützt sein
