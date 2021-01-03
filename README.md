@@ -103,7 +103,7 @@ Polycarbonat | 148°C
 Somit würden für unsere 3D Drucker nur ABS und annealed PLA infrage kommen. Da ABS ohne Hitzekammer nur schwer zu drucken ist und wir noch keine Erfahrung über das Härten von Kunststoffen haben, haben wir die Halterungen in Polycarbonat drucken lassen.
 
 ### Platine anpassen
-Damit die vorhandene Platine in das neue Gehäuse passt müssen ein paar kleinere Änderungen vorgenommen werden.<br>
+Damit die PDS100 Platine in das neue Gehäuse passt, müssen ein paar kleinere Änderungen vorgenommen werden. Mit einer Heizluftstation lässt sich das leicht entlöten.<br>
 <img src="/media/PCB_Top_edit.jpg" width="50%"/><img src="/media/PCB_Down_edit.jpg" width="50%"/><br>
 1. USB-C Buchse entfernen
 2. Barrel Jack Buchse entfernen
