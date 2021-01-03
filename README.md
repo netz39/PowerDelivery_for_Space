@@ -12,7 +12,9 @@ Die Grundlage dieses Projektes ist ein fertiges Board, dass man unter dem Namen 
 
 Das Board basiert auf dem Chip "SW3518S" vom Hersteller ISMARTWARE.<br>
 Leider gibt es nur sehr wenig Informationen und Daten über das Lademodul. Daher wurden viele Daten durch eigene Test und Analysen zusammengetragen.
-Die genaue Analyse und überprüfung des Boards kann [hier](analyse.md) nachgelesen werden.
+Die genaue Analyse und überprüfung des Boards kann hier nachgelesen werden:
+
+[**Analayse des PDS100 Boards**](analyse.md)
 
 Das Lademodul muss mit einer Gleichspannung im Bereich 6V - 30V betrieben werden. Als Spannungseingang kann auf einen herkömmlichen Hohlstecker vom Typ 5,5x2,5mm zurück gegriffen werden. Als alternativen Spannungseingang gibt es eine USB-C Buchse, welche über PowerDelivery 2.0 eine Spannung von 20V triggert.<br>
 Da das Modul Spannungen nur herunterregeln kann, muss die Eingangspannung min. 1V über der maximalen genutzten Spannung sein.
