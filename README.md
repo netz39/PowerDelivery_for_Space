@@ -1,5 +1,5 @@
 # PowerDelivery für den Hackerspace
-![Table](/media/CAD_rendering_table.png)<div align="center">*Ein-/Ausschalter, 3x XT60 Buchsen, 6x USB-Ladestationen*</div>
+![Table](/media/CAD_rendering_table2.png)<div align="center">*Ein-/Ausschalter, 3x XT60 Buchsen, 6x USB-Ladestationen*</div>
 
 Der Arbeitstisch sollte um eine zentrale Ladeeinrichtung für Smartphones, Laptops und andere Gerätschaften erweitert werden.<br>
 Dafür bietet sich der mitterweile weit verbreitete "USB PowerDelivery" Ladestandart an, welcher Spannungen im Bereich **5V bis 20V mit bis zu 5A** (also max. 100W) zur Verfügung stellt.
@@ -24,7 +24,7 @@ Als Ausgang stehen eine USB-C und eine USB-A Buchse zur Verfügung. Zudem werden
 
 Um zwischen den 3 verfügbaren Werten (Spannung und Stromstärke der 2 Buchsen) zu unterscheiden gibt es 3 LEDs:
 
- Info | Linke LED | Mittlere LED | Recht LED
+ Info | Linke LED | Mittlere LED | Rechte LED
 ----- | ----- | ----- | ------
 **Farbe**|Rot|Grün|Blau
 **Funktion** | ausgehende Spannung<br>für USB-C & USB-A| Stromstärke für<br>USB-C | Stromstärke für<br>USB-A
@@ -81,7 +81,7 @@ Damit die PDS100 Module sicher und auch optisch (einigermaßen) passend montiert
 * Abwärme muss entweichen können
 * Stromkabel müssen verlegbar sein
 
-Der erste Schritt war die nachmodelierung der vorhanden Platine: [hier zum 3D Modell](/3D_models/PowerDelivery_Board.stl)
+Der erste Schritt war die nachmodelierung der vorhanden Platine: [hier zum 3D Modell](/3D_models/PowerDelivery_Board.stl)<br>
 Mithilfe dieser Polygon-Version der PDS100-Platine konnte das neue Gehäuse angefertig werden: [neues Gehäuse](/3D_models/case.stl) & [Deckel](/3D_models/case_cap.stl)<br>
 <img src="/media/CAD_rendering2.png" width="50%"/><img src="/media/CAD_rendering.png" width="50%"/><br>
 Das Gehäuse besteht aus einer Halterung, in welche die Platine einfach reingesteckt werden kann. Ein Deckel wird passend auf den vorderen Teil der Platine raufgesteckt und schließt bündig mit der vorhanden Halterung ab. Die Öffnungen an der Ober- und Unterseite dienen der Kühlung.
@@ -90,7 +90,7 @@ Zum Befestigen sind zwei Einsparungen für Muttern der Größe M4 vorgesehen. Ü
 ![rendered Picture for mounting](/media/CAD_rendering_mounting.png)
 
 #### Materialwahl
-Da der Abstand zwischen Gehäuse und Spule (welche bei max. Belastung ca. 100°C erreichen kann) nur sehr wenige Milimeter beträgt, kann nicht jedes Material verwendet werden.
+Da der Abstand zwischen Gehäuse und Spule (welche bei max. Belastung ca. 100°C erreichen kann) nur sehr wenige Millimeter beträgt, kann nicht jedes Material verwendet werden.
 
 Material | Glastemperatur 
 --- | ---
@@ -101,6 +101,19 @@ annealed PLA | 150°C
 Polycarbonat | 148°C
 
 Somit würden für unsere 3D Drucker nur ABS und annealed PLA infrage kommen. Da ABS ohne Hitzekammer nur schwer zu drucken ist und wir noch keine Erfahrung über das Härten von Kunststoffen haben, haben wir die Halterungen in Polycarbonat drucken lassen.
+
+### Platine anpassen
+Damit die vorhandene Platine in das neue Gehäuse passt müssen ein paar kleinere Änderungen vorgenommen werden.
+<img src="/media/PCB_Top_edit.jpg" width="50%"/><img src="/media/PCB_Down_edit.jpg" width="50%"/><br>
+1. USB-C Buchse entfernen
+2. Barrel Jack Buchse entfernen
+3. Lötstopmaske mit Schleifpapier oder einen Glasfaserstift entfernen
+4. Kondensator entfernen
+5. Lötstopmaske mit Schleifpapier oder einen Glasfaserstift entfernen
+6. (optional) PowerDelivery Trigger-IC entfernen (eventuell für andere Projekte interessant)
+7. (optional) Schutz Mosfet entfernen (eventuell für andere Projekte interessant)
+
+Durch das Entfernen der Komponenten passt die Platine nun in das Gehäuse und über die freigewordenen Durchkontaktierungen unter dem Barrel Jack kann die Stromversorgung angelötet werden (rotes Kabel = positive Spannung und blaues Kabel = Ground). Das entfernen der Lötstopmaske erleichtert das Anlöten der Kabel.
 
 ### Montage & Verkabelung
 <br>![Verkabelung](/media/Verkabelung.png)<br>

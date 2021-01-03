@@ -1,8 +1,11 @@
 # Analyse der PDS100 Platine
 
 ## Aufbau der Platine
+![Schematic](/media/Schematic.PNG)
+![PCB_Top_label](/media/PCB_Top_label.jpg)
 
-- [ ] Bilder von der Platine machen
+![PCB_Down_label](/media/PCB_Down_label.jpg)
+
 - [ ] Funktionsbereiche der Platine aufschlüsseln
 
 ## Wirkungsgrad
