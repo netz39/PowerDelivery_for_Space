@@ -1,5 +1,5 @@
 # PowerDelivery für den Hackerspace
-![Table](/media/CAD_rendering_table2.png)<div align="center">*Ein-/Ausschalter, 3x XT60 Buchsen, 6x USB-Ladestationen*</div>
+![Table](/media/gallery/20210102_160408.jpg)<div align="center">*Ein-/Ausschalter, 3x XT60 Buchsen, 6x USB-Ladestationen*</div>
 
 Der Arbeitstisch sollte um eine zentrale Ladeeinrichtung für Smartphones, Laptops und andere Gerätschaften erweitert werden.<br>
 Dafür bietet sich der mitterweile weit verbreitete "USB PowerDelivery" Ladestandart an, welcher Spannungen im Bereich **5V bis 20V mit bis zu 5A** (also max. 100W) zur Verfügung stellt.
